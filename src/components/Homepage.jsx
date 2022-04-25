@@ -24,7 +24,7 @@ function Homepage() {
 
         <div className='box'>
         <h1>LOCATION</h1>
-        <p>I am American currently based in Santander, Spain. As a professional basketball player for the last 7 years I have been on the move but am ready to hang my laces up and move to where ever I can pursuit my career!</p>
+        <p>I am a American currently based in Santander, Spain. As a professional basketball player for the last 7 years I have been on the move but I am ready to hang my laces up and move to where ever I can pursue my career!</p>
         </div>
 
         
