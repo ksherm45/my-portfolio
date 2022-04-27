@@ -31,9 +31,9 @@ function Contact() {
        </div>
 
        <body className='iconContainer'>
-      <div >Work With Me! </div> 
-      <div >Code With Me!</div> 
-      <div >Follow Me!</div> 
+      <div >Work! </div> 
+      <div >Code!</div> 
+      <div >Follow!</div> 
     </body>
 
        </div>
