@@ -12,12 +12,12 @@ function Homepage() {
         <div className='box'>
         <h1> TECH STACK </h1>
         <p>MONGO, EXPRESS, REACT, NODEJS </p>
-        <p>As a junior developer I know I have more to learn within my stack, but I am confident in my ability and desire to do so!</p>
+        <p>As a junior developer I am confident in my ability and skills within my stack.</p>
         </div>
         
         <div className='box'>
         <h1>MISSION</h1>
-        <p>To help spread joy and compassion!</p>
+        <p>To help spread joy and compassion through technical solutions!</p>
         <p>Being able to work with a team and bring visions to reality is what excites me the most!</p>
         
         </div>

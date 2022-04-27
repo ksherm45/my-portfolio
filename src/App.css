@@ -25,6 +25,8 @@ body {
   text-decoration: none;
   transition: 1s;
   border-radius: 15px;
+  padding-left: 10px;
+  padding-right: 10px;
   
 }
 
@@ -35,6 +37,7 @@ body {
   border-radius: 15px;
   box-shadow: 5px 5px 10px crimson ;
   transition: ease-in;
+  
 }
 
 .iconContainer{
@@ -61,7 +64,7 @@ display: flex; justify-content: center;
 }
 
 .box {
-  height: 200px;
+  height: 250px;
   width: 20%;
   background-color: crimson;
   margin: 20px;

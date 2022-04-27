@@ -3,11 +3,7 @@ import { SocialIcon } from 'react-social-icons';
 
 function Contact() {
   return( <div>
-    <body className='iconContainer'>
-      <div >Work With Me! </div> 
-      <div >Code With Me!</div> 
-      <div >Follow Me!</div> 
-    </body>
+    
       <div className='iconContainer'>
       <SocialIcon
               url="https://www.linkedin.com/in/kaj-bjoern-sherman/"
@@ -33,6 +29,13 @@ function Contact() {
               style={{ height: 65, width: 65 }}
             />
        </div>
+
+       <body className='iconContainer'>
+      <div >Work With Me! </div> 
+      <div >Code With Me!</div> 
+      <div >Follow Me!</div> 
+    </body>
+
        </div>
 
   )}
