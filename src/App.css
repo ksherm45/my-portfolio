@@ -1,10 +1,72 @@
 body {
 
-  background-color: rgb(239, 238, 198);
-  color: rgb(10, 10, 10);
+  background-color: rgb(9, 9, 0);
   font-weight: bold;
 }
 
+
+.title {
+  font-size: 24px;
+  background: linear-gradient(45deg, chartreuse, #ff69b4, rgb(89, 0, 255)); /* Initial gradient */
+  background-size: 200% 200%;
+  color: transparent; /* Make the text transparent */
+  -webkit-background-clip: text; /* Clip the background to the text */
+  background-clip: text;
+  transition: background-position 0.5s ease-in-out; /* Smooth gradient transition */
+}
+
+.title:hover {
+  background-position: 200% 200%; /* Adjust as needed for the rotation speed */
+  animation: gradientRotation 3s linear infinite; /* 3s rotation duration - adjust as needed */
+}
+
+@keyframes gradientRotation {
+  to {
+    background-position: 0 0;
+  }
+}
+
+.flex{
+display: flex;
+}
+
+p{
+  display: flex; justify-content: center;
+  max-width: 100vh;
+  font-size: x-large;
+  margin-top: 2%;
+}
+
+img {
+  border:  5px solid;
+  border-image: linear-gradient(45deg, rgb(0, 128, 41), rgb(0, 255, 21)) 1;
+  height: 65vh;
+  width: 60vh;
+}
+section {
+display: grid;
+align-content: center;
+place-items: center;
+min-height: 80vh;
+color: burlywood;
+
+}
+
+.hidden{
+opacity: 0;
+filter: blur(5px);
+transform: translateX(-100%);
+transition: all 1s;
+color:chartreuse;
+}
+
+.show{
+opacity: 1;
+filter: blur(0px);
+transform: translateX(0%);
+color: chartreuse;
+
+}
 
 .Navbar {
 
@@ -33,18 +95,27 @@ body {
 .Link:hover {
 
   color: rgb(14, 15, 14);
-  background-color: crimson;
+  background-color: chartreuse;
   border-radius: 15px;
-  box-shadow: 5px 5px 10px crimson ;
-  transition: ease-in;
+  box-shadow: 5px 5px 5px chartreuse ;
+  transition: ease-in .7s;
   
 }
 
 .iconContainer{
 
   display: flex; justify-content: space-evenly;
-  padding-top: 5%;
-  font-size: 30px;
+  width: 40%;
+}
+
+.icon:nth-child(1){
+transition-delay: 300ms;
+}
+.icon:nth-child(2){
+transition-delay: 500ms;
+}
+.icon:nth-child(3){
+transition-delay: 800ms;
 }
 
 .Control {
@@ -61,7 +132,10 @@ body {
 
 display: flex; justify-content: center;
 
+border-image: url(/src/images/ProfilePic.jpg)  solid orange;
+
 }
+
 
 .box {
   height: 250px;
@@ -72,6 +146,21 @@ display: flex; justify-content: center;
   padding: 10px;
   font-weight: bold;
   
+}
+
+.tag {
+display:flex;
+justify-content: center;
+text-decoration: underline rgb(236, 241, 241) ;
+}
+
+.info {
+display: flex;
+justify-content: center;
+
+}
+.info:hover{
+  background-color: white;
 }
 
 .Homepage {
@@ -92,6 +181,8 @@ display: flex; justify-content: center;
   display: flex; 
   justify-content: space-evenly;
   margin: 2em;
+  transform: translateX(0%);
+  transition: all 1s;
 }
 
 
@@ -103,6 +194,8 @@ display: flex; justify-content: center;
   justify-content: flex-start;
   width: 30%;
   position: relative;
+  transform: translateX(0%);
+  transition: all 1s;
 }
 
 .ProjectDesc {
@@ -138,22 +231,10 @@ display: flex; justify-content: center;
   cursor: pointer;
   white-space: nowrap;
   text-decoration: underline;
-  border-radius: 10px;
-  
-  
-  
-}
-
-.flex  {
-
-  display: flex;
-  justify-content: space-around flex-end ;
-  align-items: center;
-  position: absolute;
-  bottom: 0;
+  border-radius: 10px; 
+  font-weight: bolder;
   
 }
-
 
 #neon {
   position: relative;
@@ -165,9 +246,9 @@ display: flex; justify-content: center;
   transition: 0.5s;
 }
 #neon:hover {
-  background: crimson;
+  background: chartreuse;
   color: #111;
-  box-shadow: 0 0 50px crimson;
+  box-shadow: 0 0 10vh chartreuse;
 }
 #neon:before {
   position: absolute;
@@ -197,4 +278,52 @@ display: flex; justify-content: center;
 #neon:hover:after {
   width: 100%;
   height: 100%;
+}
+
+@media only screen and (max-width: 600px) {
+  .box {
+    width: 90%; /* Adjusted width for smaller screens */
+  }
+
+  .Projects {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .ProjectDesc{
+    width: 50%;
+    height: 50%;
+  }
+  .button {
+    font-size: 10px; /* Adjust font size for a smaller button */
+  }
+
+  .thumbnail {
+    width: 90%; /* Adjust as needed for stacking on smaller screens */
+    margin-bottom: 20px; /* Optional: Add some margin between stacked thumbnails */
+  }
+
+  img {
+    width: 50%; /* Make images scale to fit container width */
+    height: 50%
+  }
+  .Navbar {
+    flex-wrap: wrap;
+    justify-content: center;
+    height: auto;
+  }
+
+  .Link {
+    margin: 10px;
+    font-size: large;
+  }
+
+  p {
+    max-width: 80%; /* Adjust the percentage as needed */
+    font-size: small;
+  }
+ 
+  .Homepage{
+    font-size: x-large;
+  }
 }

@@ -2,7 +2,8 @@ import React from 'react';
 import { SocialIcon } from 'react-social-icons';
 
 function Contact() {
-  return( <div>
+  return(
+     <div>
     
       <div className='iconContainer'>
       <SocialIcon

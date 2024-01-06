@@ -2,7 +2,6 @@ import React from 'react';
 import Kajio from '../images/Kajio.PNG'
 import DDD from '../images/DDD.PNG'
 import PortfolioPic from '../images/PortfolioPic.PNG'
-import { Link } from 'react-router-dom';
 
 
 function Projects() {
@@ -13,12 +12,11 @@ function Projects() {
   <a href='https://kajio.herokuapp.com/landingpage'>
   <img src={Kajio} height={250} width={'100%'} alt = 'Kajio Pic'/>
   </a>
-  <p className='ProjectDesc'>A social media app made with HBS, Javascript CSS, HTML. Backend uses MongoDB and Express</p>
+  <p className='ProjectDesc'>A basic X & Y axis collision game made with Javascript, HTML and CSS. Open with a live server in VS Code. </p>
   <div className='flex'>
   <a href='https://github.com/JohannesSattler/Kajio'>
   <button className='button' id='neon'>Code</button>
   </a>
-  <button className='button' id='neon'>App</button>
   </div>
 </div>
 
