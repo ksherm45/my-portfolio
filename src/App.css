@@ -271,6 +271,38 @@ section {
   height: 100%;
 }
 
+.matrixx {
+  display: flex;
+  justify-content: right;
+}
+.matrix {
+  background-color: transparent;
+  border: none;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  padding: 10px 20px;
+}
+
+/* Gradient animation on hover */
+.matrix:hover {
+  background: linear-gradient(45deg, #00ff00, #00cc00, #009900, #006600);
+  background-size: 400% 400%;
+  animation: gradientAnimation 1.5s infinite;
+}
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
 @media only screen and (max-width: 600px) {
   section {
     padding-top: 10px;

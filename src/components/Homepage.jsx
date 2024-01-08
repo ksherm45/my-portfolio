@@ -4,6 +4,7 @@ import { SocialIcon } from "react-social-icons";
 import Kajio from "../images/Kajio.PNG";
 import DDD from "../images/DDD.PNG";
 import PortfolioPic from "../images/PortfolioPic.PNG";
+import { Link } from "react-router-dom";
 
 function Homepage() {
   useEffect(() => {
@@ -93,9 +94,11 @@ function Homepage() {
                   Code
                 </button>
               </a>
-              <button className="button" id="neon">
-                App
-              </button>
+              <a href="https://doordashderby.netlify.app">
+                <button className="button" id="neon">
+                  App
+                </button>
+              </a>
             </div>
           </div>
 
@@ -113,9 +116,9 @@ function Homepage() {
                   Code
                 </button>
               </a>
-              <button className="button" id="neon">
+              {/* <button className="button" id="neon">
                 App
-              </button>
+              </button> */}
             </div>
           </div>
         </div>
@@ -148,6 +151,11 @@ function Homepage() {
           />
         </div>
       </section>
+      <div className="matrixx">
+        <Link to="/matrix">
+          <button className="matrix">follow the white rabbit neo</button>
+        </Link>
+      </div>
     </div>
   );
 }
