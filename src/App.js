@@ -1,12 +1,9 @@
-import './App.css';
-import Projects from './components/Projects';
-import Contact from './components/Contact';
-import Homepage from './components/Homepage';
-import Navbar from './components/Navbar.jsx';
-import { Route, Routes} from "react-router-dom";
-import React from 'react';
-
-
+import "./App.css";
+import Projects from "./components/Projects";
+import Contact from "./components/Contact";
+import Homepage from "./components/Homepage";
+import Navbar from "./components/Navbar.jsx";
+import { Route, Routes } from "react-router-dom";
 
 function App() {
   // const observer = new IntersectionObserver((entries) => {
@@ -22,20 +19,15 @@ function App() {
   // hiddenElements.forEach((el) => observer.observe(el));
 
   return (
-    
-<div>
+    <div>
+      <Navbar />
 
-<Navbar/>
-
-<Routes>
-<Route path="/" element={<Homepage/> } />
-<Route path="/Projects" element={<Projects/>} />
-<Route path="/Contact" element={<Contact/>} />
-
-</Routes>
-
-</div>
-    
+      <Routes>
+        <Route path="/" element={<Homepage />} />
+        <Route path="/Projects" element={<Projects />} />
+        <Route path="/Contact" element={<Contact />} />
+      </Routes>
+    </div>
   );
 }
 

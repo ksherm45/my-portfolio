@@ -1,13 +1,16 @@
 body {
-
   background-color: rgb(9, 9, 0);
   font-weight: bold;
 }
 
-
 .title {
   font-size: 24px;
-  background: linear-gradient(45deg, chartreuse, #ff69b4, rgb(89, 0, 255)); /* Initial gradient */
+  background: linear-gradient(
+    45deg,
+    chartreuse,
+    #ff69b4,
+    rgb(89, 0, 255)
+  ); /* Initial gradient */
   background-size: 200% 200%;
   color: transparent; /* Make the text transparent */
   -webkit-background-clip: text; /* Clip the background to the text */
@@ -26,62 +29,65 @@ body {
   }
 }
 
-.flex{
-display: flex;
+.flex {
+  display: flex;
 }
 
-p{
-  display: flex; justify-content: center;
+p {
+  display: flex;
+  justify-content: center;
   max-width: 100vh;
   font-size: x-large;
   margin-top: 2%;
 }
 
 img {
-  border:  5px solid;
+  border: 5px solid;
   border-image: linear-gradient(45deg, rgb(0, 128, 41), rgb(0, 255, 21)) 1;
   height: 65vh;
   width: 60vh;
 }
 section {
-display: grid;
-align-content: center;
-place-items: center;
-min-height: 80vh;
-color: burlywood;
-
+  display: grid;
+  align-content: center;
+  place-items: center;
+  min-height: 80vh;
+  color: burlywood;
 }
 
-.hidden{
-opacity: 0;
-filter: blur(5px);
-transform: translateX(-100%);
-transition: all 1s;
-color:chartreuse;
+.hidden {
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateX(-100%);
+  transition: all 1s;
+  color: chartreuse;
 }
 
-.show{
-opacity: 1;
-filter: blur(0px);
-transform: translateX(0%);
-color: chartreuse;
+.hidden1 {
+  opacity: 0;
+  filter: blur(10px);
+  transition: 2s;
+  color: chartreuse;
+}
 
+.show {
+  opacity: 1;
+  filter: blur(0px);
+  transform: translateX(0%);
+  color: chartreuse;
 }
 
 .Navbar {
-
-
-  display: flex; justify-content: center;
+  display: flex;
+  justify-content: center;
   background-color: rgb(13, 13, 13);
   color: beige;
   height: 90px;
   width: 100%;
-  font-size:xx-large;
-
+  font-size: xx-large;
 }
 
 .Link {
-
   margin: 20px;
   color: rgb(250, 246, 246);
   text-decoration: none;
@@ -89,33 +95,30 @@ color: chartreuse;
   border-radius: 15px;
   padding-left: 10px;
   padding-right: 10px;
-  
 }
 
 .Link:hover {
-
   color: rgb(14, 15, 14);
   background-color: chartreuse;
   border-radius: 15px;
-  box-shadow: 5px 5px 5px chartreuse ;
-  transition: ease-in .7s;
-  
+  box-shadow: 5px 5px 5px chartreuse;
+  transition: ease-in 0.7s;
 }
 
-.iconContainer{
-
-  display: flex; justify-content: space-evenly;
+.iconContainer {
+  display: flex;
+  justify-content: space-evenly;
   width: 40%;
 }
 
-.icon:nth-child(1){
-transition-delay: 300ms;
+.icon:nth-child(1) {
+  transition-delay: 300ms;
 }
-.icon:nth-child(2){
-transition-delay: 500ms;
+.icon:nth-child(2) {
+  transition-delay: 500ms;
 }
-.icon:nth-child(3){
-transition-delay: 800ms;
+.icon:nth-child(3) {
+  transition-delay: 800ms;
 }
 
 .Control {
@@ -124,18 +127,14 @@ transition-delay: 800ms;
   display: flex;
   flex-flow: row;
   justify-content: space-evenly;
-  
-
 }
 
 .Profile {
+  display: flex;
+  justify-content: center;
 
-display: flex; justify-content: center;
-
-border-image: url(/src/images/ProfilePic.jpg)  solid orange;
-
+  border-image: url(/src/images/ProfilePic.jpg) solid orange;
 }
-
 
 .box {
   height: 250px;
@@ -145,46 +144,41 @@ border-image: url(/src/images/ProfilePic.jpg)  solid orange;
   border-radius: 15px;
   padding: 10px;
   font-weight: bold;
-  
 }
 
 .tag {
-display:flex;
-justify-content: center;
-text-decoration: underline rgb(236, 241, 241) ;
+  display: flex;
+  justify-content: center;
+  text-decoration: underline rgb(236, 241, 241);
 }
 
 .info {
-display: flex;
-justify-content: center;
-
+  display: flex;
+  justify-content: center;
 }
-.info:hover{
+.info:hover {
   background-color: white;
 }
 
 .Homepage {
-
-  display: flex; justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 .Content {
-
-  display: flex; justify-content: center;
+  display: flex;
+  justify-content: center;
   justify-content: space-evenly;
   margin: 2em;
-
 }
 
 .Projects {
-
-  display: flex; 
+  display: flex;
   justify-content: space-evenly;
   margin: 2em;
   transform: translateX(0%);
   transition: all 1s;
 }
-
 
 .thumbnail {
   border-radius: 5px;
@@ -205,7 +199,6 @@ justify-content: center;
   padding-bottom: 20%;
   justify-content: center;
   align-items: center;
-
 }
 
 .title {
@@ -214,7 +207,6 @@ justify-content: center;
   font-size: 25px;
   font-weight: bold;
 }
-
 
 .thumbnail:hover {
   background-color: black;
@@ -231,9 +223,8 @@ justify-content: center;
   cursor: pointer;
   white-space: nowrap;
   text-decoration: underline;
-  border-radius: 10px; 
+  border-radius: 10px;
   font-weight: bolder;
-  
 }
 
 #neon {
@@ -257,7 +248,7 @@ justify-content: center;
   width: 10px;
   height: 10px;
   border-top: 2px solid rgb(255, 5, 226);
-  border-left: 2px solid rgb(255, 5, 226); 
+  border-left: 2px solid rgb(255, 5, 226);
   transition: 0.5s;
 }
 #neon:hover:before {
@@ -272,7 +263,7 @@ justify-content: center;
   width: 10px;
   height: 10px;
   border-bottom: 2px solid rgb(255, 5, 226);
-  border-right: 2px solid rgb(255, 5, 226); 
+  border-right: 2px solid rgb(255, 5, 226);
   transition: 0.5s;
 }
 #neon:hover:after {
@@ -290,7 +281,7 @@ justify-content: center;
     align-items: center;
   }
 
-  .ProjectDesc{
+  .ProjectDesc {
     width: 50%;
     height: 50%;
   }
@@ -305,7 +296,7 @@ justify-content: center;
 
   img {
     width: 50%; /* Make images scale to fit container width */
-    height: 50%
+    height: 50%;
   }
   .Navbar {
     flex-wrap: wrap;
@@ -322,8 +313,8 @@ justify-content: center;
     max-width: 80%; /* Adjust the percentage as needed */
     font-size: small;
   }
- 
-  .Homepage{
+
+  .Homepage {
     font-size: x-large;
   }
 }
