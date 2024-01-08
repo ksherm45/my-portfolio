@@ -272,6 +272,11 @@ section {
 }
 
 @media only screen and (max-width: 600px) {
+  section {
+    padding-top: 10px;
+    min-height: auto;
+  }
+
   .box {
     width: 90%; /* Adjusted width for smaller screens */
   }
@@ -284,6 +289,7 @@ section {
   .ProjectDesc {
     width: 50%;
     height: 50%;
+    padding-bottom: 5%;
   }
   .button {
     font-size: 10px; /* Adjust font size for a smaller button */
