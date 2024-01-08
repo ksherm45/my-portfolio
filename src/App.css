@@ -7,9 +7,10 @@ body {
   font-size: 24px;
   background: linear-gradient(
     45deg,
-    chartreuse,
-    #ff69b4,
-    rgb(89, 0, 255)
+    #00ff00,
+    #00cc00,
+    #009900,
+    #abe229
   ); /* Initial gradient */
   background-size: 200% 200%;
   color: transparent; /* Make the text transparent */
