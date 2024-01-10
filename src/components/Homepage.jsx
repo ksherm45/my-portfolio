@@ -3,6 +3,7 @@ import ProfilePic from "../images/ProfilePic.jpg";
 import { SocialIcon } from "react-social-icons";
 import Kajio from "../images/Kajio.PNG";
 import DDD from "../images/DDD.PNG";
+import Neo from "../images/neo.jpeg";
 import PortfolioPic from "../images/PortfolioPic.PNG";
 import { Link } from "react-router-dom";
 
@@ -65,8 +66,8 @@ function Homepage() {
             <img src={Kajio} alt="Kajio Pic" />
 
             <p className="ProjectDesc">
-              A basic X & Y axis collision game made with Javascript, HTML and
-              CSS. Open with a live server in VS Code.{" "}
+              A full stack application using handlebars and MongoDB. It
+              replicates twitter with a added touch of randomness.{" "}
             </p>
             <div className="flex">
               <a href="https://github.com/JohannesSattler/Kajio">
@@ -104,10 +105,10 @@ function Homepage() {
 
           <div className="thumbnail icon hidden">
             <div className="title">My Portfolio </div>
-            <img src={PortfolioPic} alt="DDD Pic" />
+            <img src={Neo} alt="DDD Pic" />
             <p className="ProjectDesc">
-              A basic X & Y axis collision game made with Javascript, HTML and
-              CSS. Open with a live server in VS Code.{" "}
+              A behind the scenes look at what you are seeing now! Take a look
+              at the bonus page nestled at the bottom.{" "}
             </p>
 
             <div className="flex">
