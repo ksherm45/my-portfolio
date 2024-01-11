@@ -3,8 +3,12 @@ body {
   font-weight: bold;
 }
 
+button {
+  text-decoration: wavy;
+}
+
 .title {
-  font-size: 24px;
+  font-size: 50px;
   background: linear-gradient(
     45deg,
     #00ff00,
@@ -45,6 +49,11 @@ p {
 img {
   border: 5px solid;
   border-image: linear-gradient(45deg, rgb(0, 128, 41), rgb(0, 255, 21)) 1;
+  height: 65vh;
+  width: 60vh;
+}
+.ProfilePic {
+  border: 5px solid;
   height: 65vh;
   width: 60vh;
 }
@@ -100,7 +109,7 @@ section {
 
 .Link:hover {
   color: rgb(14, 15, 14);
-  background-color: chartreuse;
+  background-color: #7fff00;
   border-radius: 15px;
   box-shadow: 5px 5px 5px #315f3e;
   transition: ease-in 0.7s;
@@ -145,12 +154,6 @@ section {
   border-radius: 15px;
   padding: 10px;
   font-weight: bold;
-}
-
-.tag {
-  display: flex;
-  justify-content: center;
-  text-decoration: underline rgb(236, 241, 241);
 }
 
 .info {
@@ -216,7 +219,7 @@ section {
 
 .button {
   background-color: white;
-  border: 2px solid black;
+
   padding: 5px;
   display: flex;
   font-size: 20px;
@@ -225,6 +228,7 @@ section {
   white-space: nowrap;
   border-radius: 10px;
   font-weight: bolder;
+  text-decoration: wavy;
 }
 
 #neon {

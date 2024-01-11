@@ -4,7 +4,7 @@ import { SocialIcon } from "react-social-icons";
 import Kajio from "../images/Kajio.PNG";
 import DDD from "../images/DDD.PNG";
 import Neo from "../images/neo.jpeg";
-import PortfolioPic from "../images/PortfolioPic.PNG";
+import ProfileDefault from "../images/ProfileDefault.png";
 import { Link } from "react-router-dom";
 
 function Homepage() {
@@ -37,7 +37,7 @@ function Homepage() {
       <h1 className="title">Kaj Sherman's Portfolio!</h1>
       <div className="Profile">
         {" "}
-        <img src={ProfilePic} alt="Profile Pic" />
+        <img className="ProfilePic" src={ProfileDefault} alt="Profile Pic" />
       </div>
 
       <section className="hidden1" id="info">
