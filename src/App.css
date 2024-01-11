@@ -102,7 +102,7 @@ section {
   color: rgb(14, 15, 14);
   background-color: chartreuse;
   border-radius: 15px;
-  box-shadow: 5px 5px 5px chartreuse;
+  box-shadow: 5px 5px 5px #315f3e;
   transition: ease-in 0.7s;
 }
 
@@ -223,7 +223,6 @@ section {
   margin: 1px 5px 1px 30px;
   cursor: pointer;
   white-space: nowrap;
-  text-decoration: underline;
   border-radius: 10px;
   font-weight: bolder;
 }
