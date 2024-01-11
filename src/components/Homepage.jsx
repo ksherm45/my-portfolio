@@ -1,5 +1,4 @@
 import React, { useEffect } from "react";
-import ProfilePic from "../images/ProfilePic.jpg";
 import { SocialIcon } from "react-social-icons";
 import Kajio from "../images/Kajio.PNG";
 import DDD from "../images/DDD.PNG";
